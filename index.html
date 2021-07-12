@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Пусть становлени Font-end developer">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+        <!-- добавим стили mocha для отображения результатов -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+        <title>Портфолио Junior верстальщика</title>
+        <!-- добавляем сам фреймворк mocha -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+        <script>
+            // включаем режим тестирования в стиле BDD
+            mocha.setup('bdd');
+        </script>
+        <!-- добавляем chai -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+        <script>
+            // chai предоставляет большое количество функций. Объявим assert глобально
+            let assert = chai.assert;
+        </script>
+    </head>
+    
+    <body>
+        <header class="page-header">
+            <div class="container">
+                +7 922 924 09 94
+                biomode21@mail.ru
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-image">
+                <div class="container">
+                    <h1 class="heading">Даниил Обухов</h1>
+                    <p>Junior верстальщик</p>
+                </div>
+            </section>
+
+            <section class="intro">
+                <div class="container">
+                    <h2>Давайте познакомимся</h2>
+                    <h3>Пара слов о себе</h3>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                +7 922 924 09 94
+                biomode21@mail.ru
+            </div>
+        </footer>
+
+        <!-- элемент с id="mocha" будет содержать результаты тестов -->
+        <div id="mocha"></div>
+        <script src="js/01_base.js"></script>
+        <script src="js/02_number.js"></script>
+        <script src="js/03_string.js"></script>
+        <script src="js/04_function.js"></script>
+        <script src="js/05_array.js"></script>
+        <script src="js/06_object.js"></script>
+        <script src="js/07_async.js"></script>
+        <script src="js/08_DOM.js"></script>
+        <script src="js/library.js"></script>
+        <script src="js/test.js"></script>
+
+        <!-- скрипт со спецификацией (describe, it...) -->
+        <script src="js/testOnError.js"></script>
+        <!-- запускаем тесты! -->
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>
